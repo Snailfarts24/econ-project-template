@@ -1,0 +1,38 @@
+# Data: commit the code that builds it, not the files.
+# MANIFEST.csv stays tracked as the provenance record.
+data/raw/*
+!data/raw/MANIFEST.csv
+data/derived/*
+!data/derived/.gitkeep
+
+# Data formats anywhere in the repo
+*.parquet
+*.dta
+*.sav
+*.sas7bdat
+*.feather
+*.h5
+
+# Secrets (API keys go in .env; see .env.example)
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+
+# OS
+.DS_Store

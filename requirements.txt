@@ -1,0 +1,9 @@
+pandas
+pyarrow
+pandera
+pyfixest
+statsmodels
+linearmodels
+matplotlib
+pytest
+python-dotenv
